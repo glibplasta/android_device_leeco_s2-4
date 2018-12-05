@@ -161,9 +161,6 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Exclude serif fonts for saving system.img size.
 EXCLUDE_SERIF_FONTS := true
 
-# Extended filesystem support
-TARGET_EXFAT_DRIVER := sdfat
-
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
