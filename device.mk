@@ -354,6 +354,9 @@ PRODUCT_COPY_FILES += \
 
 # Qualcomm dependencies
 PRODUCT_PACKAGES += \
+    libcurl \
+    libjson \
+    libqti_vndfwk_detect \
     libtinyxml \
     libxml2
 
