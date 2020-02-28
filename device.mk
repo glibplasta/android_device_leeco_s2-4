@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    vendor/arrow/overlay/CarrierConfig
+    $(LOCAL_PATH)/overlay/lineage-sdk
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -216,9 +216,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ad_calib.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/ad_calib.cfg
 
-# Device specific settings
+# Doze mode
 PRODUCT_PACKAGES += \
-    LeEcoParts
+    Doze
 
 # Fake logprint for fingerprint libs
 PRODUCT_PACKAGES += \
@@ -284,14 +284,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     $(LOCAL_PATH)/configs/msm_irqbalance_little_big.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance_little_big.conf
 
-# LeEco Modules
-PRODUCT_PACKAGES += \
-    LePref
-
-# LeEco IR remote
-PRODUCT_PACKAGES += \
-    LeRemote
-
 # Libshims
 PRODUCT_PACKAGES += \
     libshims_camera \
@@ -325,11 +317,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# Perf
-#PRODUCT_BOOT_JARS += \
-#    QPerformance \
-#    UxPerformance
 
 # Perf configuration files
 PRODUCT_COPY_FILES += \

@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_s2.mk
+    $(LOCAL_DIR)/lineage_s2.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_s2-user \
-    arrow_s2-userdebug \
-    arrow_s2-eng
+    lineage_s2-user \
+    lineage_s2-userdebug \
+    lineage_s2-eng
